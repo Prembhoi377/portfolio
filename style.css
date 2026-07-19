@@ -820,6 +820,39 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--text-secondary);
 }
 
+/* Skill Pill Tags for Specializations & Tools */
+.skill-pill-tag {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  cursor: default;
+}
+
+.skill-pill-tag:hover {
+  background: rgba(168, 85, 247, 0.08);
+  border-color: rgba(168, 85, 247, 0.35);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.15);
+}
+
+.skill-pill-tag.accent-blue:hover {
+  background: rgba(6, 182, 212, 0.08);
+  border-color: rgba(6, 182, 212, 0.35);
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.15);
+}
+
+.skill-pill-tag.accent-purple:hover {
+  background: rgba(168, 85, 247, 0.08);
+  border-color: rgba(168, 85, 247, 0.35);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.15);
+}
+
 /* --- Projects Section --- */
 .projects-grid {
   display: grid;
