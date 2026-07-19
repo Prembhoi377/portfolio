@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prem Bhoi | Computer Science Student & Aspiring Software Developer Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio website of Prem Bhoi, Third-Year Computer Science Engineering student at J. T. Mahajan College of Engineering. Aspiring software developer specializing in Python, AI, and Web Development.">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" id="scroll-indicator-container">
+    <div class="scroll-progress-bar" id="scroll-indicator-bar"></div>
+  </div>
+
+  <!-- Ambient Glow Effects -->
+  <div class="glow-blob glow-1"></div>
+  <div class="glow-blob glow-2"></div>
+  <div class="glow-blob glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header-nav" id="main-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="logo-link">
+        <i class="fa-solid fa-code"></i><span>Prem.Bhoi</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu-list">
+        <li><a href="#hero" class="nav-link active" id="nav-link-hero">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+        <li><a href="#certifications" class="nav-link" id="nav-link-certs">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        <li><a href="assets/Prem_Bhoi_Resume.pdf" class="nav-btn" download="Prem_Bhoi_Resume.pdf"
+            id="nav-btn-resume">Resume</a></li>
+      </ul>
+
+      <div class="burger-menu" id="menu-toggle-btn" aria-label="Toggle Menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section container" id="hero">
+    <div class="hero-wrapper">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          Open to Internship Opportunities
+        </div>
+        <h1 class="hero-name">Prem Bhoi</h1>
+        <div class="hero-title">
+          <span class="typed-text" id="typewriter-text"></span><span class="cursor">&nbsp;</span>
+        </div>
+        <p class="hero-tagline">
+          Building AI-powered solutions and web applications to solve real-world problems.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+            View Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+            Contact Me <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="assets/Prem_Bhoi_Resume.pdf" class="btn btn-tertiary" download="Prem_Bhoi_Resume.pdf"
+            id="hero-btn-resume">
+            Download Resume <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <span>Connect with me</span>
+          <div class="social-links">
+            <a href="https://github.com/Prembhoi377" target="_blank" rel="noopener" class="social-link"
+              id="hero-social-github" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/prem-bhoi" target="_blank" rel="noopener" class="social-link"
+              id="hero-social-linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:prembhoi1377@gmail.com" class="social-link" id="hero-social-email" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-avatar-container reveal reveal-delay-2">
+        <div class="hero-avatar-bg"></div>
+        <div class="hero-avatar-border">
+          <div class="hero-avatar-inner">
+            <img src="c:\Users\DELL\Downloads\WhatsApp Image 2026-04-02 at 3.34.03 PM.jpeg"
+              alt="Prem Bhoi Avatar Illustration">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get To Know Me</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hello! I'm <strong>Prem Bhoi</strong>, a dedicated Third-Year B.Tech Computer Science Engineering student
+            studying at <strong>J. T. Mahajan College of Engineering, Faizpur</strong>. I am highly passionate about
+            utilizing computer science principles to build impactful software.
+          </p>
+          <p>
+            My core technical expertise lies in Python development, web applications, and artificial intelligence
+            integration. I focus on creating streamlined user experiences backed by robust, intelligent backend systems.
+            My academic journey has refined my problem-solving abilities and software engineering foundations.
+          </p>
+          <p>
+            Currently, I am actively seeking software engineering and developer internship opportunities to apply my
+            technical knowledge, collaborate on industry projects, and contribute to cutting-edge development teams.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-card glass-card">
+              <div class="about-card-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h3 class="about-card-title">Education Focus</h3>
+              <p class="about-card-desc">B.Tech Computer Science Engineering student (2023 - 2027).</p>
+            </div>
+
+            <div class="about-card glass-card">
+              <div class="about-card-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="about-card-title">Interests</h3>
+              <p class="about-card-desc">Python scripting, AI models, APIs, and modern frontend design.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats reveal reveal-delay-2">
+          <!-- CGPA Visual Gauge Card -->
+          <div class="cgpa-gauge-card glass-card">
+            <div class="cgpa-radial">
+              <svg class="cgpa-svg" viewBox="0 0 180 180">
+                <defs>
+                  <linearGradient id="cgpa-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6366f1" />
+                    <stop offset="100%" stop-color="#a855f7" />
+                  </linearGradient>
+                </defs>
+                <circle class="cgpa-bg-ring" cx="90" cy="90" r="80"></circle>
+                <!-- dashoffset value will be set by intersection observer inside JS -->
+                <circle class="cgpa-fill-ring" id="cgpa-circle" cx="90" cy="90" r="80" data-cgpa="7.69"></circle>
+              </svg>
+              <div class="cgpa-text">
+                <span class="cgpa-value">7.69</span>
+                <span class="cgpa-label">CGPA</span>
+              </div>
+            </div>
+            <h3 class="cgpa-caption">Academic Excellence</h3>
+            <p class="cgpa-sub">Current Cumulative Grade Point Average in B.Tech CSE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">My Capabilities</span>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming & Web Tech -->
+        <div class="skills-category glass-card reveal">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-code"></i> Core Languages & Web
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python <i class="fa-brands fa-python" style="color: #3b82f6;"></i></span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript <i class="fa-brands fa-js" style="color: #f59e0b;"></i></span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 <i class="fa-brands fa-html5" style="color: #ef4444;"></i></span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">CSS3 <i class="fa-brands fa-css3-alt" style="color: #06b6d4;"></i></span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Libraries, APIs & Databases -->
+        <div class="skills-category glass-card reveal reveal-delay-1">
+          <h3 class="skills-category-title">
+            <i class="fa-solid fa-gears"></i> Frameworks & Databases
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Streamlit</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Pandas</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Groq API (AI Integration)</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Databases (MySQL / SQLite / MongoDB)</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-percent="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Grid Small -->
+        <div class="skills-grid-small reveal reveal-delay-2">
+          <div class="skill-tag-card glass-card">
+            <div class="skill-tag-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h4 class="skill-tag-title">Libraries</h4>
+            <div class="skill-tag-items">PyPDF2, Requests, NumPy</div>
+          </div>
+
+          <div class="skill-tag-card glass-card">
+            <div class="skill-tag-icon"><i class="fa-solid fa-terminal"></i></div>
+            <h4 class="skill-tag-title">Dev Tools</h4>
+            <div class="skill-tag-items">VS Code, JupyterLab, Git</div>
+          </div>
+
+          <div class="skill-tag-card glass-card">
+            <div class="skill-tag-icon"><i class="fa-solid fa-palette"></i></div>
+            <h4 class="skill-tag-title">Design</h4>
+            <div class="skill-tag-items">Canva, Figma basics</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Portfolio Showcases</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: SkillSync AI -->
+        <div class="project-card glass-card skillsync-card reveal">
+          <div class="project-image">
+            <div class="browser-mockup">
+              <div class="browser-header">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <img src="assets/skillsync_screenshot.png" alt="SkillSync AI Platform Preview">
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="https://github.com/Prembhoi377/SkillSync-AI" target="_blank" rel="noopener" class="btn btn-primary btn-sm"
+                  id="overlay-link-skillsync-code">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag featured">AI & recruitment</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Streamlit</span>
+              <span class="project-tag">Groq API</span>
+              <span class="project-tag">SQLite</span>
+            </div>
+            <h3 class="project-title">SkillSync AI</h3>
+            <p class="project-desc">
+              An AI-powered recruitment and candidate evaluation platform designed to automate and simplify resume
+              evaluation, candidate vetting, and practice testing.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-circle-check"></i> Resume parsing and ATS evaluation metrics.</li>
+              <li><i class="fa-solid fa-circle-check"></i> AI-powered Job Description matching algorithms.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Automated interview question generation using Groq API.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Practice testing system with automatic score calculations.
+              </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Prembhoi377/SkillSync-AI" target="_blank" rel="noopener" class="project-link"
+                id="project-link-skillsync-code">
+                <i class="fa-brands fa-github"></i> Code Repository <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: MathSpark -->
+        <div class="project-card glass-card mathspark-card reveal reveal-delay-1">
+          <div class="project-image">
+            <div class="phone-mockup">
+              <div class="phone-speaker"></div>
+              <img src="assets/calculator_screenshot.png" alt="MathSpark Preview">
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-links">
+                <a href="https://github.com/Prembhoi377/MathSpark-Web-Based-Calculator" target="_blank" rel="noopener" class="btn btn-primary btn-sm"
+                  id="overlay-link-calc-code">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Web Application</span>
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">MathSpark</h3>
+            <p class="project-desc">
+              A fully responsive web-based calculator showcasing elegant frontend coding practices, mathematical
+              operations, and clean interactive feedback layouts.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-circle-check"></i> Responsive structure supporting mobile, tablet, and desktops.
+              </li>
+              <li><i class="fa-solid fa-circle-check"></i> User-friendly layouts with intuitive visual buttons.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Clean, premium, and interactive UI/UX styled aesthetics.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Prembhoi377/MathSpark-Web-Based-Calculator" target="_blank" rel="noopener" class="project-link"
+                id="project-link-calc-code">
+                <i class="fa-brands fa-github"></i> Code Repository <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Academic Credentials</span>
+        <h2 class="section-title">Education <span>Timeline</span></h2>
+      </div>
+
+      <div class="education-container">
+        <div class="education-line"></div>
+
+        <!-- J.T. Mahajan College -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Expected 2027</span>
+              <h3 class="timeline-title">B.Tech Computer Science Engineering</h3>
+              <p class="timeline-inst">J. T. Mahajan College of Engineering, Faizpur</p>
+              <p class="timeline-grade">Current CGPA: <span>7.69 / 10.0</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HSC (Science) -->
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Completed</span>
+              <h3 class="timeline-title">HSC (Higher Secondary Certificate)</h3>
+              <p class="timeline-grade">Grade Performance: <span>83.50%</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SSC -->
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Completed</span>
+              <h3 class="timeline-title">SSC (Secondary School Certificate)</h3>
+              <p class="timeline-grade">Grade Performance: <span>89.20%</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Professional Development</span>
+        <h2 class="section-title">Certifications & <span>Internships</span></h2>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Cert 1 -->
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <h3 class="cert-title">Python Programming Internship</h3>
+          <p class="cert-provider">YBI Foundation</p>
+          <p class="cert-desc">
+            Focused on advanced Python structures, scripting, algorithm design, data management, and problem solving
+            workflows.
+          </p>
+          <a href="assets/python_internship_certificate.pdf" target="_blank" class="btn btn-secondary" style="margin-top: 1.5rem; font-size: 0.85rem; padding: 0.5rem 1rem;" id="cert-btn-python">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card glass-card reveal reveal-delay-1">
+          <div class="cert-icon">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <h3 class="cert-title">Cloud Computing & Big Data Internship</h3>
+          <p class="cert-provider">YBI Foundation</p>
+          <p class="cert-desc">
+            Acquired fundamental knowledge of cloud storage configurations, computational server units, and processing
+            large datasets.
+          </p>
+          <a href="assets/cloud_computing_certificate.pdf" target="_blank" class="btn btn-secondary" style="margin-top: 1.5rem; font-size: 0.85rem; padding: 0.5rem 1rem;" id="cert-btn-cloud">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card glass-card reveal reveal-delay-2">
+          <div class="cert-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3 class="cert-title">Application Development Internship</h3>
+          <p class="cert-provider">NexaNova ProTech</p>
+          <p class="cert-desc">
+            Practical development of user-facing components, state synchronization, backend API connectivity, and
+            deployment.
+          </p>
+          <a href="assets/application_development_certificate.pdf" target="_blank" class="btn btn-secondary" style="margin-top: 1.5rem; font-size: 0.85rem; padding: 0.5rem 1rem;" id="cert-btn-appdev">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Let's Connect</span>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <!-- Phone -->
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <a href="tel:+918208978142" class="contact-value" id="contact-info-phone">+91 8208978142</a>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:prembhoi1377@gmail.com" class="contact-value"
+                id="contact-info-email">prembhoi1377@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Jalgaon, Maharashtra, India</div>
+            </div>
+          </div>
+
+          <!-- Social Details Grid -->
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div>
+              <div class="contact-label">Social Handles</div>
+              <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+                <a href="https://github.com/Prembhoi377" target="_blank" rel="noopener" class="social-link"
+                  id="contact-social-github" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/prem-bhoi" target="_blank" rel="noopener" class="social-link"
+                  id="contact-social-linkedin" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal reveal-delay-1">
+          <div class="contact-form-card glass-card">
+            <!-- Form Status Notice -->
+            <div class="form-status" id="form-feedback-notice"></div>
+
+            <form id="portfolio-contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Name</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="Your Email" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Subject Topic" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-input" placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn" id="contact-submit-btn">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo" id="footer-logo-link">
+          <i class="fa-solid fa-code"></i><span>Prem.Bhoi</span>
+        </a>
+        <ul class="footer-links">
+          <li><a href="#hero" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#education" class="footer-link">Education</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-credit">
+          Designed & Developed by <span>Prem Bhoi</span>
+        </div>
+        <div>
+          &copy; 2026 Prem Bhoi. All rights reserved.
+        </div>
+        <button class="scroll-top-btn" id="back-to-top-btn" aria-label="Scroll to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script File Link -->
+  <script src="script.js"></script>
+</body>
+
+</html>

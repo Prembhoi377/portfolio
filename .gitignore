@@ -1,0 +1,9 @@
+# Raw local backup files
+love__1_.pdf
+
+# System and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
