@@ -75,20 +75,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section {
-  padding: 0 0 2.25rem 0;
-  scroll-margin-top: 45px;
+  padding: 0 0 1.75rem 0;
+  scroll-margin-top: 10px;
   position: relative;
   z-index: 2;
 }
 
 #hero {
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   scroll-margin-top: 0;
 }
 
 .section-header {
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.85rem;
   text-align: center;
 }
 
@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .section-title {
