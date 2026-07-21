@@ -68,10 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetSection = document.querySelector(targetId);
         if (targetSection) {
           e.preventDefault();
+          if (targetId === '#hero') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+          }
           const navHeight = mainNav ? mainNav.offsetHeight : 65;
-          const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - navHeight + 8;
+          const targetHeader = targetSection.querySelector('.section-header') || targetSection;
+          const targetPosition = targetHeader.getBoundingClientRect().top + window.scrollY - navHeight - 15;
           window.scrollTo({
-            top: targetPosition,
+            top: Math.max(0, targetPosition),
             behavior: 'smooth'
           });
         }
