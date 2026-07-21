@@ -75,8 +75,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section {
-  padding: 0 0 1.75rem 0;
-  scroll-margin-top: 10px;
+  padding: 0 0 1.25rem 0;
+  scroll-margin-top: 60px;
   position: relative;
   z-index: 2;
 }
@@ -88,20 +88,20 @@ body::-webkit-scrollbar-thumb:hover {
 
 .section-header {
   margin-top: 0;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.65rem;
   text-align: center;
 }
 
 .section-subtitle {
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.15rem;
 }
 
 .section-title {

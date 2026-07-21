@@ -57,11 +57,25 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenuList.classList.toggle('active');
   });
 
-  // Close menu when a navigation link is clicked
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  // Smooth scroll & close menu when a navigation link is clicked
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
       menuToggleBtn.classList.remove('active');
       navMenuList.classList.remove('active');
+
+      const targetId = link.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          e.preventDefault();
+          const navHeight = mainNav ? mainNav.offsetHeight : 65;
+          const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - navHeight + 8;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
     });
   });
 
