@@ -75,8 +75,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section {
-  padding: 1.5rem 0 3rem 0;
-  scroll-margin-top: 80px;
+  padding: 0.5rem 0 2.5rem 0;
+  scroll-margin-top: 65px;
   position: relative;
   z-index: 2;
 }
@@ -87,7 +87,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section-header {
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
   text-align: center;
 }
 
