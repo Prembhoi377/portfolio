@@ -110,6 +110,10 @@
               alt="Prem Bhoi Profile Photo">
           </div>
         </div>
+        <!-- Floating Ambient Tech Badges -->
+        <div class="hero-float-badge float-badge-1"><i class="fa-solid fa-brain" style="color:#a855f7;"></i> Machine Learning</div>
+        <div class="hero-float-badge float-badge-2"><i class="fa-brands fa-python" style="color:#3b82f6;"></i> Python Dev</div>
+        <div class="hero-float-badge float-badge-3"><i class="fa-solid fa-laptop-code" style="color:#06b6d4;"></i> Frontend UI</div>
       </div>
     </div>
   </section>
@@ -136,16 +140,24 @@
               <div class="about-card-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <h3 class="about-card-title">Education Focus</h3>
-              <p class="about-card-desc">B.Tech Computer Science Engineering student (2023 - 2027).</p>
+              <h3 class="about-card-title">Education</h3>
+              <p class="about-card-desc">B.Tech CSE (2023 - 2027)</p>
             </div>
 
             <div class="about-card glass-card">
               <div class="about-card-icon">
-                <i class="fa-solid fa-laptop-code"></i>
+                <i class="fa-solid fa-briefcase"></i>
               </div>
-              <h3 class="about-card-title">Interests</h3>
-              <p class="about-card-desc">Python scripting, AI models, APIs, and modern frontend design.</p>
+              <h3 class="about-card-title">Experience</h3>
+              <p class="about-card-desc">4+ Internships Completed</p>
+            </div>
+
+            <div class="about-card glass-card">
+              <div class="about-card-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="about-card-title">Core Skills</h3>
+              <p class="about-card-desc">Python, AI/ML & Web UI</p>
             </div>
           </div>
         </div>
@@ -777,6 +789,31 @@
       </div>
     </div>
   </footer>
+
+  <!-- Certificate Lightbox Modal -->
+  <div class="cert-modal-overlay" id="certModalOverlay" aria-hidden="true">
+    <div class="cert-modal-card glass-card">
+      <button class="cert-modal-close" id="certModalCloseBtn" aria-label="Close modal">&times;</button>
+      <div class="cert-modal-header">
+        <div class="cert-modal-icon" id="certModalIcon"><i class="fa-solid fa-award"></i></div>
+        <div>
+          <h3 class="cert-modal-title" id="certModalTitle">Certificate View</h3>
+          <p class="cert-modal-subtitle" id="certModalSubtitle">Verified Credential</p>
+        </div>
+      </div>
+      <div class="cert-modal-body">
+        <img id="certModalPreviewImg" src="" alt="Certificate Preview" class="cert-modal-img">
+      </div>
+      <div class="cert-modal-footer">
+        <a id="certModalDownloadBtn" href="#" download class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+        <a id="certModalOpenBtn" href="#" target="_blank" class="btn btn-secondary btn-sm">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full Tab
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Script File Link -->
   <script src="script.js"></script>

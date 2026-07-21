@@ -262,4 +262,139 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+  // ==========================================
+  // 7. Certificate Lightbox Modal Handler
+  // ==========================================
+  const certModalOverlay = document.getElementById('certModalOverlay');
+  const certModalCloseBtn = document.getElementById('certModalCloseBtn');
+  const certModalTitle = document.getElementById('certModalTitle');
+  const certModalSubtitle = document.getElementById('certModalSubtitle');
+  const certModalPreviewImg = document.getElementById('certModalPreviewImg');
+  const certModalDownloadBtn = document.getElementById('certModalDownloadBtn');
+  const certModalOpenBtn = document.getElementById('certModalOpenBtn');
+  const certModalIcon = document.getElementById('certModalIcon');
+
+  const certDataMap = {
+    'cert-btn-codealpha-ml': {
+      title: 'Machine Learning Internship Certificate',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/159392)',
+      img: 'assets/codealpha_ml_certificate_preview.png',
+      pdf: 'assets/codealpha_machine_learning_certificate.pdf',
+      icon: '<i class="fa-solid fa-brain" style="color:#a855f7;"></i>'
+    },
+    'lor-btn-codealpha-ml': {
+      title: 'Machine Learning Letter of Recommendation',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/159392)',
+      img: 'assets/codealpha_ml_certificate_preview.png',
+      pdf: 'assets/codealpha_machine_learning_lor.pdf',
+      icon: '<i class="fa-solid fa-file-pdf" style="color:#a855f7;"></i>'
+    },
+    'cert-btn-codealpha-frontend': {
+      title: 'Frontend Development Internship Certificate',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/160327)',
+      img: 'assets/codealpha_frontend_certificate_preview.png',
+      pdf: 'assets/codealpha_frontend_development_certificate.pdf',
+      icon: '<i class="fa-solid fa-laptop-code" style="color:#3b82f6;"></i>'
+    },
+    'lor-btn-codealpha-frontend': {
+      title: 'Frontend Development Letter of Recommendation',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/160327)',
+      img: 'assets/codealpha_frontend_certificate_preview.png',
+      pdf: 'assets/codealpha_frontend_development_lor.pdf',
+      icon: '<i class="fa-solid fa-file-pdf" style="color:#3b82f6;"></i>'
+    },
+    'cert-btn-appdev': {
+      title: 'Application Development Internship Certificate',
+      subtitle: 'NexaNova ProTech • Issued Nov 2025',
+      img: 'assets/application_development_certificate.pdf',
+      pdf: 'assets/application_development_certificate.pdf',
+      icon: '<i class="fa-solid fa-mobile-screen-button" style="color:#06b6d4;"></i>'
+    },
+    'cert-btn-python': {
+      title: 'Python Programming Internship Certificate',
+      subtitle: 'YBI Foundation • Issued May 2025',
+      img: 'assets/python_internship_certificate.pdf',
+      pdf: 'assets/python_internship_certificate.pdf',
+      icon: '<i class="fa-brands fa-python" style="color:#f59e0b;"></i>'
+    },
+    'exp-btn-ml-cert': {
+      title: 'Machine Learning Internship Certificate',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/159392)',
+      img: 'assets/codealpha_ml_certificate_preview.png',
+      pdf: 'assets/codealpha_machine_learning_certificate.pdf',
+      icon: '<i class="fa-solid fa-brain" style="color:#a855f7;"></i>'
+    },
+    'exp-btn-ml-lor': {
+      title: 'Machine Learning Letter of Recommendation',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/159392)',
+      img: 'assets/codealpha_ml_certificate_preview.png',
+      pdf: 'assets/codealpha_machine_learning_lor.pdf',
+      icon: '<i class="fa-solid fa-file-pdf" style="color:#a855f7;"></i>'
+    },
+    'exp-btn-frontend-cert': {
+      title: 'Frontend Development Internship Certificate',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/160327)',
+      img: 'assets/codealpha_frontend_certificate_preview.png',
+      pdf: 'assets/codealpha_frontend_development_certificate.pdf',
+      icon: '<i class="fa-solid fa-laptop-code" style="color:#3b82f6;"></i>'
+    },
+    'exp-btn-frontend-lor': {
+      title: 'Frontend Development Letter of Recommendation',
+      subtitle: 'CodeAlpha • Issued 21st July 2026 (ID: CA/DF1/160327)',
+      img: 'assets/codealpha_frontend_certificate_preview.png',
+      pdf: 'assets/codealpha_frontend_development_lor.pdf',
+      icon: '<i class="fa-solid fa-file-pdf" style="color:#3b82f6;"></i>'
+    },
+    'exp-btn-appdev-cert': {
+      title: 'Application Development Internship Certificate',
+      subtitle: 'NexaNova ProTech • Issued Nov 2025',
+      img: 'assets/application_development_certificate.pdf',
+      pdf: 'assets/application_development_certificate.pdf',
+      icon: '<i class="fa-solid fa-mobile-screen-button" style="color:#06b6d4;"></i>'
+    },
+    'exp-btn-python-cert': {
+      title: 'Python Programming Internship Certificate',
+      subtitle: 'YBI Foundation • Issued May 2025',
+      img: 'assets/python_internship_certificate.pdf',
+      pdf: 'assets/python_internship_certificate.pdf',
+      icon: '<i class="fa-brands fa-python" style="color:#f59e0b;"></i>'
+    }
+  };
+
+  Object.keys(certDataMap).forEach(btnId => {
+    const btn = document.getElementById(btnId);
+    if (btn) {
+      btn.addEventListener('click', (e) => {
+        const data = certDataMap[btnId];
+        if (data && certModalOverlay && (data.img.endsWith('.png') || data.img.endsWith('.jpg'))) {
+          e.preventDefault();
+          certModalTitle.textContent = data.title;
+          certModalSubtitle.textContent = data.subtitle;
+          certModalIcon.innerHTML = data.icon;
+          certModalDownloadBtn.href = data.pdf;
+          certModalOpenBtn.href = data.pdf;
+          certModalPreviewImg.src = data.img;
+
+          certModalOverlay.classList.add('active');
+          certModalOverlay.setAttribute('aria-hidden', 'false');
+        }
+      });
+    }
+  });
+
+  if (certModalCloseBtn && certModalOverlay) {
+    certModalCloseBtn.addEventListener('click', () => {
+      certModalOverlay.classList.remove('active');
+      certModalOverlay.setAttribute('aria-hidden', 'true');
+    });
+
+    certModalOverlay.addEventListener('click', (e) => {
+      if (e.target === certModalOverlay) {
+        certModalOverlay.classList.remove('active');
+        certModalOverlay.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
 });
