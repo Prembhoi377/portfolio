@@ -576,50 +576,6 @@ body::-webkit-scrollbar-thumb:hover {
   100% { transform: scale(1.1); opacity: 0.45; }
 }
 
-/* Floating Tech Badges */
-.hero-float-badge {
-  position: absolute;
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 50px;
-  padding: 0.45rem 1rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(168, 85, 247, 0.15);
-  z-index: 5;
-  pointer-events: none;
-  animation: floatBadge 4s ease-in-out infinite alternate;
-}
-
-.float-badge-1 {
-  top: 8%;
-  left: -25px;
-  animation-delay: 0s;
-}
-
-.float-badge-2 {
-  top: 48%;
-  right: -30px;
-  animation-delay: 1.5s;
-}
-
-.float-badge-3 {
-  bottom: 2%;
-  left: 5px;
-  animation-delay: 2.5s;
-}
-
-@keyframes floatBadge {
-  0% { transform: translateY(0px) scale(1); }
-  100% { transform: translateY(-10px) scale(1.04); }
-}
-
 /* --- About Me Section --- */
 .about-grid {
   display: grid;
